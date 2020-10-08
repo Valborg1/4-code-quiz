@@ -1,4 +1,4 @@
-#qid {
+#q-num {
     padding: 5px 10px;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -191,6 +191,10 @@ h1 {
     font-weight: bold;
 }
 
-/* #question1 {
-    display: none;
-} */
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
