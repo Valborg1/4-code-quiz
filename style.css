@@ -191,10 +191,28 @@ h1 {
     font-weight: bold;
 }
 
-.green {
-    color: green;
+#game-over {
+    display: none;
+    font-size: 20px;
+}
+
+#score-card {
+    display: none;
+    font-size: 20px;
+}
+
+#all-scores {
+    font-size: 20px;
+}
+
+.quiz {
+    margin: 10px;
 }
 
 .red {
     color: red;
+}
+
+.green {
+    color: green;
 }

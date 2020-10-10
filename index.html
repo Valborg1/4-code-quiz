@@ -110,7 +110,7 @@ var questions = [{
             <div class="row">
             
               <!-- Question Element -->
-              <div class="col-lg-8 col-md-6 col-sm-12" id="question1">
+              <div class="col-lg-8 col-md-6 col-sm-12" id="question-display">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <h3><span class="label label-warning" id="q-num"></span><span id="q-text"></span></h3>
@@ -130,12 +130,19 @@ var questions = [{
                 </div>
               </div>
 
+              <div class="col-lg-8 col-md-6 col-sm-12" id="game-over">
+                    <h2>Thanks for Playing!</h2>
+                    <p>Your Final Score: <span id="final-score"></span></p>
+                    <p>Enter your initials: <input type="text" maxlength="3" id="initials"/>
+                        <button class="btn btn-lg btn-primary" id="submit-score">Submit</button>
+                    </p>
+              </div>
+
               <!-- Right Side Elements -->
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div id="ten-countdown"></div>
                 <br/>
                 <h3>Best Score<span class="bestScore"></span></h3>
-                <h3>Current Score<span class="currentScore"></span></h3>
                 <h3 ><span class="rightWrong"></span></h3>
               </div>
             </div>
@@ -145,10 +152,12 @@ var questions = [{
     </div>
   </section>
 
-                  <!-- </div>
-                    <div class="modal-footer text-muted">
-                         <span id="answer">INCORRECT</span>
-                    </div> -->
+<!-- Score Card Element -->
+  <div class="col-lg-8 col-md-6 col-sm-12 offset-2 card" id="score-card">
+      <h2 class="card-title">Top Scores:</h2>
+      <ol id="all-scores">
+      </ol>
+  </div>
 
 
 
