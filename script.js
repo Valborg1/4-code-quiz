@@ -10,9 +10,12 @@ $("#start-btn").on("click",function(){
 
 
 // Set Best Score at Game Start
-var scoreArr = JSON.parse(localStorage.getItem("score")) || [];
-$(".bestScore").text(": " + scoreArr[0].score);
-
+if (window.localStorage.length === 0) {
+    $(".bestScore").text(": 0");
+} else {
+    var scoreArr = JSON.parse(localStorage.getItem("score")) || [];
+    $(".bestScore").text(": " + scoreArr[0].score);
+}
 
 
 
