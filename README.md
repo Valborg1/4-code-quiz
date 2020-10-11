@@ -1,6 +1,6 @@
 ## Code Quiz
 
-The code quiz is a simple game taht allows the user to experience the the functionality of DOM manipulation, a timer, and JSON.
+The code quiz is a simple game taht allows the user to experience the the functionality of DOM manipulation, a timer, and local storage.
 
 I added a start screen that gives instructions. The game timer only starts after the "Start Game" button is clicked:
 
