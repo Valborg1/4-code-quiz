@@ -24,7 +24,9 @@ var timerEl = $("#ten-countdown");
 var timer;
 
 
-function countdown() {
+$("#start-btn").on("click", function() {
+
+    function countdown() {
     time--;
     timerEl.text(time);
     if (time <= 0) {
@@ -33,6 +35,9 @@ function countdown() {
 }
 timerEl.text(time);
 timer = setInterval(countdown,1000);
+});
+
+
 
 function gameOver() {
     setTimeout(function () {
