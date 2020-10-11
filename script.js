@@ -1,5 +1,12 @@
 
 
+// Start Game
+$("#start-btn").on("click",function(){
+    $("#start-game").css("display","block");
+    $("#instructions").css("display","none");
+
+})
+
 
 
 // Set Best Score at Game Start
@@ -41,6 +48,7 @@ function gameOver() {
 
 $("#submit-score").on("click", function(){
     $("#score-card").css("display","block");
+    $("#play-again").css("display","block");
     var submitInitials = $("#initials").val().trim();
     var submitScore = $("#final-score").text();
 
@@ -82,6 +90,7 @@ $(".a4").text(questions[questionNumber].answer4);
 // Answer Click Function
 $("label.btn").on('click',function (evt) {
     evt.preventDefault();
+    $(this).prop('disabled', true);
     var choice = $(this).find('input:radio').val();
     $ans = questions[questionNumber].correct;
 

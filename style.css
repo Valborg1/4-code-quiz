@@ -205,6 +205,13 @@ h1 {
     font-size: 20px;
 }
 
+#play-again {
+    display: none;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .quiz {
     margin: 10px;
 }
@@ -215,4 +222,19 @@ h1 {
 
 .green {
     color: green;
+}
+
+#start-game {
+    display: none;
+}
+
+#instructions, #start-btn {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card {
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px; 
 }
